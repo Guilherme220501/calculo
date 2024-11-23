@@ -14,5 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $quantidadePiso = $areaComodo / $areaPiso;
     $margemCalculada = $quantidadePiso * ($margem / 100);
     $quantidadeTotal = $quantidadePiso + $margemCalculada;
+
+    // Enviar os resultados para a página de volta
+    header('Location: index.php?areaComodo=' . urlencode(number_format($areaComodo, 2)) . 
+    '&areaPiso=' . urlencode(number_format($areaPiso, 2)) .'&quantidadePiso=' . urlencode(number_format($quantidadePiso, 2)) . 
+    '&margemCalculada=' . urlencode(number_format($margemCalculada, 2)) . 
+    '&quantidadeTotal=' . urlencode(number_format($quantidadeTotal, 2)));
+    exit;
 }
 ?>
