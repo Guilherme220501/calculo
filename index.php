@@ -9,39 +9,39 @@
 <body>
     <style>
         body{background-color: blue;}
-        h1{color: white;}
+        h1{color: white;text-align: center;}
         legend{color: red;font-size: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
         p{color: white;}
         label{color: white;text-shadow: 9px;font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: inherit;}
     </style>
 
 <main>
-    <h1 class="text-center">Calculadora de Materiais</h1>
+    <h1>Calculadora de Materiais</h1>
     <div class="container">
         <form method="POST" action="calcular.php" class="row g-2">
             <fieldset class="row g-2">
                 <legend>Cômodo</legend>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="comodo-largura" class="form-label">Largura</label>
                         <input type="number" class="form-control" id="comodo-largura" name="comodo-largura" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="comodo-comprimento" class="form-label">Comprimento</label>
                         <input type="number" class="form-control" id="comodo-comprimento" name="comodo-comprimento" required>
                     </div>
             </fieldset>
             <fieldset class="row g-2">
                 <legend>Piso</legend>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="piso-largura" class="form-label">Largura</label>
                         <input type="number" class="form-control" id="piso-largura" name="piso-largura" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="piso-comprimento" class="form-label">Comprimento</label>
                         <input type="number" class="form-control" id="piso-comprimento" name="piso-comprimento" required>
                     </div>
             </fieldset>
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <label for="margem" class="form-label">Margem (%)</label>
                 <input type="number" class="form-control" id="margem" name="margem" required>
             </div>
